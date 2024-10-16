@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Material.h"
+#include "ADMaterial.h"
 
 class KayMaterial : public ADMaterial
 {
