@@ -20,5 +20,5 @@ KayMaterial::KayMaterial(const InputParameters & parameters)
 void
 KayMaterial::computeQpProperties()
 {
-  _k[_qp] = 1. / std::sqrt(1. + _grad_u * _grad_u);
+  _k[_qp] = 1. / std::sqrt(1. + _grad_u[_qp] * _grad_u[_qp]);
 }
