@@ -12,7 +12,8 @@ KayMaterial::validParams()
 
 KayMaterial::KayMaterial(const InputParameters & parameters)
   : ADMaterial(parameters),
-   _grad_u(adCoupledGradient("variable"))
+   _grad_u(adCoupledGradient("variable")),
+   _k(declareADProperty<Real>("k"))
 {
 }
 

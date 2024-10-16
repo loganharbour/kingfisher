@@ -15,4 +15,7 @@ protected:
 
   /// The coupled variable gradient
   const ADVariableGradient & _grad_u;
+
+  /// The k material property
+  ADMaterialProperty<Real> & _k;
 };
