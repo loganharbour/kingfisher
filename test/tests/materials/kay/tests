@@ -1,0 +1,7 @@
+[Tests]
+  [test]
+    type = 'Exodiff'
+    input = 'kay.i'
+    exodiff = 'kay_out.e'
+  []
+[]
